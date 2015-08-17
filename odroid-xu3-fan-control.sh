@@ -6,7 +6,7 @@
 # See README.md for details.
 
 #set to false to suppress logs
-DEBUG=true
+DEBUG=false
 
 # Make sure only root can run our script
 if (( $EUID != 0 )); then
@@ -63,11 +63,11 @@ do
   elif (( ${current_max_temp} >= 68000 )); then
     new_fan_speed=130
   elif (( ${current_max_temp} >= 66000 )); then
-    new_fan_speed=70 
+    new_fan_speed=80 
   elif (( ${current_max_temp} >= 63000 )); then
-    new_fan_speed=60 
+    new_fan_speed=80
   elif (( ${current_max_temp} >= 60000 )); then
-    new_fan_speed=60
+    new_fan_speed=2
   elif (( ${current_max_temp} >= 58000 )); then
     new_fan_speed=2
   elif (( ${current_max_temp} >= 55000 )); then
