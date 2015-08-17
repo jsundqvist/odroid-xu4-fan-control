@@ -1,32 +1,27 @@
 # odroid-xu3-fan-control
-Makes Odroid XU3 Lite fan silent on idle load
+Adopted settings to get odroid-xu3-fan-control working on XU4.
 
-## Odroid XU3 Lite
+Makes Odroid XU4 Lite fan silent on idle load
+
+## Odroid XU4
 
 Will only work on:
-* *Ubuntu 14.04.1*
-* Arch Linux (3.10.69-1-ARCH)
+* *Ubuntu 15.04.1*
 
 Was not tested anywhere else. Might work though after adjusting script variables
 
 ## Precautions
 
-### Only *Odroid XU3 Lite* is supported
-
-Users report it *does not* work on XU4
+### Only *Odroid XU4* is supported
 
 ### Is it safe to use?
 
-I did my best to adjust fan speed based on current *maximum* temperature of any sensor.
-
-Also, when script quits it brings fan mode back to *automatic* "factory" settings.
-
-I use and will use this software. But in the end - if anything happens to your hardware, do not blame me please.
+When script quits it brings fan mode back to *automatic* "factory" settings.
 
 ## Usage
 
     sudo apt-get install git
-    git clone https://github.com/nthx/odroid-xu3-fan-control.git
+    git clone https://github.com/max2play/odroid-xu3-fan-control.git
     cd odroid-xu3-fan-control
     sudo ./odroid-xu3-fan-control.sh
 
