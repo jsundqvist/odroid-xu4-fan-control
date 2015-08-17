@@ -17,8 +17,8 @@ fi
 
 
 TEMPERATURE_FILE="/sys/devices/10060000.tmu/temp"
-FAN_MODE_FILE="/sys/devices/odroid_fan.14/fan_mode"
-FAN_SPEED_FILE="/sys/devices/odroid_fan.14/pwm_duty"
+FAN_MODE_FILE="/sys/devices/odroid_fan.13/fan_mode"
+FAN_SPEED_FILE="/sys/devices/odroid_fan.13/pwm_duty"
 TEST_EVERY=3 #seconds
 new_fan_speed_default=80
 LOGGER_NAME=odroid-xu3-fan-control
@@ -65,13 +65,13 @@ do
   elif (( ${current_max_temp} >= 66000 )); then
     new_fan_speed=70 
   elif (( ${current_max_temp} >= 63000 )); then
-    new_fan_speed=65 
+    new_fan_speed=60 
   elif (( ${current_max_temp} >= 60000 )); then
     new_fan_speed=60
   elif (( ${current_max_temp} >= 58000 )); then
-    new_fan_speed=50
+    new_fan_speed=2
   elif (( ${current_max_temp} >= 55000 )); then
-    new_fan_speed=30
+    new_fan_speed=2
   else
     new_fan_speed=2
   fi
