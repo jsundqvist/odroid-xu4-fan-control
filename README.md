@@ -1,4 +1,4 @@
-# odroid-xu3-fan-control
+# odroid-xu4-fan-control
 Adopted settings to get odroid-xu3-fan-control working on XU4.
 
 Makes Odroid XU4 Lite fan silent on idle load
