@@ -21,9 +21,9 @@ When script quits it brings fan mode back to *automatic* "factory" settings.
 ## Usage
 
     sudo apt-get install git
-    git clone https://github.com/max2play/odroid-xu3-fan-control.git
-    cd odroid-xu3-fan-control
-    sudo ./odroid-xu3-fan-control.sh
+    git clone https://github.com/f1vefour/odroid-xu4-fan-control.git
+    cd odroid-xu4-fan-control
+    sudo ./odroid-xu4-fan-control.sh
 
 ## Installation
 
@@ -34,7 +34,7 @@ to the runlevels
 
     cd /etc/init.d/
     #adjust to correct, absolute path below
-    sudo ln -s ~/odroid-xu3-fan-control/odroid-fan-controller
+    sudo ln -s ~/odroid-xu4-fan-control/odroid-fan-controller
     sudo update-rc.d odroid-fan-controller defaults
 
 you can also use the following to start the controller
