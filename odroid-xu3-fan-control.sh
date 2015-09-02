@@ -30,16 +30,16 @@ function cleanup {
 }
 trap cleanup EXIT
 
-function exit_xu3_only_supported {
-  ${DEBUG} && logger -t $LOGGER_NAME "event: non-xu3 $1"
+function exit_xu4_only_supported {
+  ${DEBUG} && logger -t $LOGGER_NAME "event: non-xu4 $1"
   exit 2
 }
 if [ ! -f $TEMPERATURE_FILE ]; then
-  exit_xu3_only_supported "a"
+  exit_xu4_only_supported "a"
 elif [ ! -f $FAN_MODE_FILE ]; then
-  exit_xu3_only_supported "b"
+  exit_xu4_only_supported "b"
 elif [ ! -f $FAN_SPEED_FILE ]; then
-  exit_xu3_only_supported "c"
+  exit_xu4_only_supported "c"
 fi
 
 
